@@ -32,9 +32,7 @@
             <li class="nav-item active">
               <a class="nav-link" href="about.html">About</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="services.html">Services</a>
-            </li>
+            
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
@@ -43,14 +41,7 @@
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Blog
               </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                <a class="dropdown-item active" href="blog-home-1.html">Web Devlopment</a>
-                <a class="dropdown-item" href="blog-home-2.html">App Devlopment</a>
-                <a class="dropdown-item" href="blog-post.html">Digital Marketing</a>
-                <a class="dropdown-item" href="blog-post.html">Robotics</a>
-                <a class="dropdown-item" href="blog-post.html">3D Printing</a>
-                <a class="dropdown-item" href="blog-post.html">Internet Of Things</a>
-              </div>
+              
             </li>
             
           </ul>
@@ -76,86 +67,53 @@
       <!-- Intro Content -->
       <div class="row">
         <div class="col-lg-6">
-          <img class="img-fluid rounded mb-4" src="http://placehold.it/750x450" alt="">
+          <img class="img-fluid rounded mb-4" src="Fresh-Web-Design.jpg" alt="">
         </div>
         <div class="col-lg-6">
           <h2>About KJS Infotech</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptate nihil eum consectetur similique? Consectetur, quod, incidunt, harum nisi dolores delectus reprehenderit voluptatem perferendis dicta dolorem non blanditiis ex fugiat.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, magni, aperiam vitae illum voluptatum aut sequi impedit non velit ab ea pariatur sint quidem corporis eveniet. Odit, temporibus reprehenderit dolorum!</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti eum ratione ex ea praesentium quibusdam? Aut, in eum facere corrupti necessitatibus perspiciatis quis?</p>
+          <p>We at KJS Infotech are dedicated in designing and developing the best website for your business or personal needs.  Our team has expertise in Web Development, App Development, Graphic Designing, SEO, Social Media, E-mail Marketing, Analytics and Adworks.  KJS Infotech is one stop place for all your web development needs.</p> 
+          <p>Beside web development, we also have a 3D Design Studio in which we offer 3D Design using AutoCad and Solidworks. After designing the product, we also print the design using some of the best 3D Printers available in the market.</p>
         </div>
       </div>
       <!-- /.row -->
-
-      <!-- Team Members -->
-      <h2>Our Team</h2>
-
+  <!-- Contact Form -->
+      <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
       <div class="row">
-        <div class="col-lg-4 mb-4">
-          <div class="card h-100 text-center">
-            <img class="card-img-top" src="http://placehold.it/750x450" alt="">
-            <div class="card-body">
-              <h4 class="card-title">Team Member</h4>
-              <h6 class="card-subtitle mb-2 text-muted">Position</h6>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit.</p>
+        <div class="col-lg-8 mb-4">
+          <h3>Send us a Message</h3>
+          <form name="sentMessage" id="contactForm" novalidate>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Full Name:</label>
+                <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                <p class="help-block"></p>
+              </div>
             </div>
-            <div class="card-footer">
-              <a href="#">name@example.com</a>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Phone Number:</label>
+                <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="col-lg-4 mb-4">
-          <div class="card h-100 text-center">
-            <img class="card-img-top" src="http://placehold.it/750x450" alt="">
-            <div class="card-body">
-              <h4 class="card-title">Team Member</h4>
-              <h6 class="card-subtitle mb-2 text-muted">Position</h6>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit.</p>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Email Address:</label>
+                <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+              </div>
             </div>
-            <div class="card-footer">
-              <a href="#">name@example.com</a>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Message:</label>
+                <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="col-lg-4 mb-4">
-          <div class="card h-100 text-center">
-            <img class="card-img-top" src="http://placehold.it/750x450" alt="">
-            <div class="card-body">
-              <h4 class="card-title">Team Member</h4>
-              <h6 class="card-subtitle mb-2 text-muted">Position</h6>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit.</p>
-            </div>
-            <div class="card-footer">
-              <a href="#">name@example.com</a>
-            </div>
-          </div>
+            <div id="success"></div>
+            <!-- For success/fail messages -->
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
         </div>
       </div>
-      <!-- /.row -->
-
-      <!-- Our Customers -->
-      <h2>Our Customers</h2>
-      <div class="row">
-        <div class="col-lg-2 col-sm-4 mb-4">
-          <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-        </div>
-        <div class="col-lg-2 col-sm-4 mb-4">
-          <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-        </div>
-        <div class="col-lg-2 col-sm-4 mb-4">
-          <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-        </div>
-        <div class="col-lg-2 col-sm-4 mb-4">
-          <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-        </div>
-        <div class="col-lg-2 col-sm-4 mb-4">
-          <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-        </div>
-        <div class="col-lg-2 col-sm-4 mb-4">
-          <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-        </div>
-      </div>
-      <!-- /.row -->
+            <!-- /.row -->
 
     </div>
     <!-- /.container -->
